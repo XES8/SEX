@@ -16,6 +16,6 @@
 
 |   文件   |   网页效果   | 说明  |
 | ---- | ---- |---- |
-| love6.html | [http://heweilai.com/love-code/love6.html](https://xes8.github.io/SEX/love6.html)| 红色爱心 |
-| 流星雨.html | [http://heweilai.com/love-code/stars.html]() | 流星雨 |
+| love6.html | [](https://xes8.github.io/SEX/love6.html)| 红色爱心 |
+| 流星雨.html | [](https://xes8.github.io/SEX/流星雨.html) | 流星雨 |
 | --- | --- | --- |
