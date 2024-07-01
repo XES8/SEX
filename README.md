@@ -16,6 +16,6 @@
 
 |   文件   |   网页效果   | 说明  |
 | ---- | ---- |---- |
-| love6.html | [SEX](https://xes8.github.io/SEX/love6.html)| 红色爱心 |
-| 流星雨.html | [SEX](https://xes8.github.io/SEX/流星雨.html) | 流星雨 |
+| love6.html | [SEX/love6.html](https://xes8.github.io/SEX/love6.html)| 红色爱心 |
+| 流星雨.html | [SEX/流星雨.html](https://xes8.github.io/SEX/流星雨.html) | 流星雨 |
 | --- | --- | --- |
