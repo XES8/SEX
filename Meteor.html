@@ -74,13 +74,15 @@
         body {
             padding: 0;
             margin: 0;
+            overflow: hidden; /* 隐藏滚动条 */
         }
 
         .index-bg {
             width: 100vw;
             height: 100vh;
             background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
-            overflow: hidden;
+            overflow: hidden; /* 隐藏滚动条 */
+            position: relative; /* 确保星星的相对定位 */
         }
 
         .index-bg .stars {
@@ -122,22 +124,83 @@
         }
 
         /* 调整星星的位置，使其在不同屏幕上更好地分布 */
-        .index-bg .star:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
-        .index-bg .star:nth-child(2) { top: 30%; left: 50%; animation-delay: 1s; }
-        .index-bg .star:nth-child(3) { top: 50%; left: 80%; animation-delay: 2s; }
-        .index-bg .star:nth-child(4) { top: 70%; left: 40%; animation-delay: 3s; }
-        .index-bg .star:nth-child(5) { top: 90%; left: 60%; animation-delay: 4s; }
-        .index-bg .star:nth-child(6) { top: 20%; left: 90%; animation-delay: 5s; }
-        .index-bg .star:nth-child(7) { top: 80%; left: 10%; animation-delay: 6s; }
+        .index-bg .star:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .index-bg .star:nth-child(2) {
+            top: 30%;
+            left: 50%;
+            animation-delay: 1s;
+        }
+
+        .index-bg .star:nth-child(3) {
+            top: 50%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .index-bg .star:nth-child(4) {
+            top: 70%;
+            left: 40%;
+            animation-delay: 3s;
+        }
+
+        .index-bg .star:nth-child(5) {
+            top: 90%;
+            left: 60%;
+            animation-delay: 4s;
+        }
+
+        .index-bg .star:nth-child(6) {
+            top: 20%;
+            left: 90%;
+            animation-delay: 5s;
+        }
+
+        .index-bg .star:nth-child(7) {
+            top: 80%;
+            left: 10%;
+            animation-delay: 6s;
+        }
 
         @media (max-width: 768px) {
-            .index-bg .star:nth-child(1) { top: 15%; left: 25%; }
-            .index-bg .star:nth-child(2) { top: 35%; left: 55%; }
-            .index-bg .star:nth-child(3) { top: 55%; left: 75%; }
-            .index-bg .star:nth-child(4) { top: 75%; left: 45%; }
-            .index-bg .star:nth-child(5) { top: 95%; left: 65%; }
-            .index-bg .star:nth-child(6) { top: 25%; left: 85%; }
-            .index-bg .star:nth-child(7) { top: 85%; left: 15%; }
+            .index-bg .star:nth-child(1) {
+                top: 15%;
+                left: 25%;
+            }
+
+            .index-bg .star:nth-child(2) {
+                top: 35%;
+                left: 55%;
+            }
+
+            .index-bg .star:nth-child(3) {
+                top: 55%;
+                left: 75%;
+            }
+
+            .index-bg .star:nth-child(4) {
+                top: 75%;
+                left: 45%;
+            }
+
+            .index-bg .star:nth-child(5) {
+                top: 95%;
+                left: 65%;
+            }
+
+            .index-bg .star:nth-child(6) {
+                top: 25%;
+                left: 85%;
+            }
+
+            .index-bg .star:nth-child(7) {
+                top: 85%;
+                left: 15%;
+            }
         }
     </style>
 </head>
