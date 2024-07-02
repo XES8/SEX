@@ -80,10 +80,12 @@
             width: 100vw;
             height: 100vh;
             background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            overflow: hidden;
         }
 
         .index-bg .stars {
-            height: 0
+            height: 100%;
+            position: relative;
         }
 
         .index-bg .star {
@@ -92,9 +94,7 @@
             height: 5px;
             border-radius: 50%;
             background: #fff;
-            top: 100px;
-            left: 400px;
-            position: relative;
+            position: absolute;
             -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
             -webkit-animation: star-opacity 5s infinite ease-in, star-pos 5s infinite ease-in;
@@ -120,6 +120,25 @@
             -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%
         }
+
+        /* 调整星星的位置，使其在不同屏幕上更好地分布 */
+        .index-bg .star:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .index-bg .star:nth-child(2) { top: 30%; left: 50%; animation-delay: 1s; }
+        .index-bg .star:nth-child(3) { top: 50%; left: 80%; animation-delay: 2s; }
+        .index-bg .star:nth-child(4) { top: 70%; left: 40%; animation-delay: 3s; }
+        .index-bg .star:nth-child(5) { top: 90%; left: 60%; animation-delay: 4s; }
+        .index-bg .star:nth-child(6) { top: 20%; left: 90%; animation-delay: 5s; }
+        .index-bg .star:nth-child(7) { top: 80%; left: 10%; animation-delay: 6s; }
+
+        @media (max-width: 768px) {
+            .index-bg .star:nth-child(1) { top: 15%; left: 25%; }
+            .index-bg .star:nth-child(2) { top: 35%; left: 55%; }
+            .index-bg .star:nth-child(3) { top: 55%; left: 75%; }
+            .index-bg .star:nth-child(4) { top: 75%; left: 45%; }
+            .index-bg .star:nth-child(5) { top: 95%; left: 65%; }
+            .index-bg .star:nth-child(6) { top: 25%; left: 85%; }
+            .index-bg .star:nth-child(7) { top: 85%; left: 15%; }
+        }
     </style>
 </head>
 
@@ -127,12 +146,12 @@
     <div class="index-bg">
         <div class="stars">
             <div class="star"></div>
-            <div class="star" style="top: 80px; left: 800px; animation-delay: 3s;"></div>
-            <div class="star" style="top: 40px; left: 646px; animation-delay: 2s;"></div>
-            <div class="star" style="top: 120px; left: 395px; animation-delay: 4s;"></div>
-            <div class="star" style="top: 160px; left: 765px; animation-delay: 1s;"></div>
-            <div class="star" style="top: 170px; left: 1200px; animation-delay: 2s;"></div>
-            <div class="star" style="top: 200px; left: 1000px; animation-delay: 1s;"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
         </div>
     </div>
 </body>
